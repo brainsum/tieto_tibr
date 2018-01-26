@@ -1,0 +1,17 @@
+{
+    "name": "brainsum/tieto_tibr",
+    "license": "GPL-2.0+",
+    "description": "Drupal module for Tieto tibr functionality.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "mhavelant",
+            "email": "mhavelant@brainsum.com"
+        },
+        {
+            "name": "mdanko",
+            "email": "mdanko@brainsum.com"
+        }
+    ],
+    "require": {}
+}
