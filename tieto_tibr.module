@@ -10,6 +10,7 @@
  *   to a node related twig.
  */
 
+use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\file\Entity\File;
 
 /**
@@ -85,4 +86,17 @@ function tieto_tibr_preprocess_node(&$variables) {
 
   $variables['tibr_init_host'] = $resolver->resolve();
   $variables['tibr_tunnel_html_path'] = $modulePath . '/includes/tibbr_tunnel.html';
+}
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function tieto_tibr_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+  /* @var Drupal\field\Entity\FieldConfig $field */
+  foreach ($fields as $field) {
+    // TODO: move this somewhere into the field definition.
+    if ($field->getType() === 'tibbr') {
+      $field->addConstraint('all_or_none');
+    }
+  }
 }
