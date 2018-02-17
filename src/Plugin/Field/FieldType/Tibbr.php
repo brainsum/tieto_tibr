@@ -57,20 +57,21 @@ class Tibbr extends FieldItemBase implements FieldItemInterface {
    * {@inheritdoc}
    */
   public static function schema(FieldStorageDefinitionInterface $field_definition) {
-    return array(
-      'columns' => array(
-        'tibbr_subject_id' => array(
+    return [
+      'columns' => [
+        'tibbr_subject_id' => [
           'type' => 'int',
           'unsigned' => TRUE,
           'not null' => FALSE,
-        ),
-        'tibbr_subject_name' => array(
+        ],
+        'tibbr_subject_name' => [
           'type' => 'varchar',
           'length' => self::$tibbrNameMaxLength,
           'not null' => FALSE,
-        ),
-      ),
-    );
+        ],
+      ],
+    ];
   }
 
 }
+

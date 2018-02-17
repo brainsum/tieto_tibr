@@ -22,7 +22,7 @@ class TibbrFormatter extends FormatterBase {
    * {@inheritdoc}
    */
   public function viewElements(FieldItemListInterface $items, $langcode = NULL) {
-    $elements = array();
+    $elements = [];
 
     foreach ($items as $delta => $item) {
       if (!empty($item->tibbr_subject_id) && !empty($item->tibbr_subject_name)) {
@@ -41,3 +41,4 @@ class TibbrFormatter extends FormatterBase {
   }
 
 }
+
