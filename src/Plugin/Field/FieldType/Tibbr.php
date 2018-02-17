@@ -74,4 +74,3 @@ class Tibbr extends FieldItemBase implements FieldItemInterface {
   }
 
 }
-

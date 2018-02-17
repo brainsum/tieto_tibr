@@ -41,4 +41,3 @@ class TibbrFormatter extends FormatterBase {
   }
 
 }
-
