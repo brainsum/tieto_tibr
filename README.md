@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/brainsum/tieto_tibr.svg?branch=master)](https://travis-ci.org/brainsum/tieto_tibr)
+
 # Tieto Tibr integration
 Provides integration for Tibr on the Tieto intranet.
 Only supports nodes.
