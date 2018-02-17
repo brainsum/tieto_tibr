@@ -47,7 +47,7 @@ class TibbrWidget extends WidgetBase implements WidgetInterface {
     if ($this->fieldDefinition->getFieldStorageDefinition()->getCardinality() == 1) {
       $element += [
         '#type' => 'fieldset',
-	/* '#attributes' => array('class' => array('container-inline')) */
+        /* '#attributes' => array('class' => array('container-inline')) */
       ];
     }
 
