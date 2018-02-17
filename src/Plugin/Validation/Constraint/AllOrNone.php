@@ -15,8 +15,9 @@ use Symfony\Component\Validator\Constraint;
 class AllOrNone extends Constraint {
 
   /**
-   * The message that will be shown
-   * if from the values are not set all or none of them.
+   * Default message.
+   *
+   * Will be shown if from the values are not set all or none of them.
    *
    * @var string
    */
