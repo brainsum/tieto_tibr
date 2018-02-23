@@ -14,7 +14,7 @@ class MaxLengthValidator extends ConstraintValidator {
    * {@inheritdoc}
    */
   public function validate($value, Constraint $constraint) {
-    if (strlen($value) > $constraint->maxLength) {
+    if (\strlen($value) > $constraint->maxLength) {
       $this->context->addViolation($constraint->notLessThan, ['%value' => $value, '%maxLength' => $constraint->maxLength]);
     }
   }
